@@ -1026,7 +1026,7 @@ button
 }
 }
 
-/*Audio support*/
+/*Audio support style*/
 
 #initPlay{
 	height:54px;
@@ -1083,6 +1083,11 @@ button
 	
 }
 
+audio{
+	display: none;
+	width: 300px;
+}
+
 /*Fix the div to the right bottom corner*/
 #fixed{
 	position:fixed;
@@ -1090,12 +1095,8 @@ button
 	right:50px;
 }
 
-/*set responsive width for the element*/
+/*set responsive properties for the element*/
 
-audio{
-	display: none;
-	width: 300px;
-}
 @media screen and (max-width: 320px){
 	#fixed{
 		position:fixed;
