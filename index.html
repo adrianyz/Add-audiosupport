@@ -1,0 +1,344 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><!--for IE, to use edge mode-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fellowship of the Ring</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  
+  
+  <body>
+  	<div id="container" class="row columns">
+	  <h1 class="hide">The Fellowship of the Ring</h1>
+	  <header id="mainHeader" class="row">
+          	
+           <nav>  
+               <h2 class="hide">Main Navigation</h2>   
+                <div class="title-bar" data-margin-top="0" data-responsive-toggle="main-menu" data-hide-for="medium">
+                <button class="menu-icon float-right" type="button" data-toggle></button>
+				</div>
+    
+				<div class="medium-pull-12 columns show-for-medium" >
+					
+					<img src="images/logo.svg" alt="The Fellowship of the Ring" class="logo">
+				</div> 
+			    
+			    <div data-sticky-container class="show-for-medium medium-push-12 columns" id="mainNavCon">
+                   <div class="sticky mainMenu" data-sticky data-margin-top="0" style="width:100%;">
+                    	<nav data-magellan>
+							<h3 class="hide">Navigation for Medium and Large</h3>
+							 <ul id="mainNavMedium" class="row">
+							  <li><a href="#home">HOME</a></li>
+							  <li><a href="#promo">PROMOTION</a></li>
+							  <li><a href="#story">STORY</a></li>
+							  <li><a href="#gallery">GALLERY</a></li>
+							  <li><a href="#register">REGISTER</a></li>
+							</ul>
+					  	</nav>
+					</div>
+			    </div>
+ 
+                <div class="show-for-small-only">
+                   <div id="main-menu">
+                    	<nav id="smallNav">
+                    		<h3 class="hide">Navigation for small</h3>
+							 <ul id="mainNavsmall">
+							  <li><a href="#home">HOME</a></li>
+							  <li><a href="#promo">PROMOTION</a></li>
+							  <li><a href="#story">STORY</a></li>
+							  <li><a href="#gallery">GALLERY</a></li>
+							  <li><a href="#register">REGISTER</a></li>
+							</ul>
+					  	</nav>
+					</div>
+			    </div>
+          </nav>
+          
+          <div class="medium-pull-12 columns show-for-small-only">
+            	<img src="images/logo.svg" alt="The Fellowship of the Ring" class="logo">
+          </div>  
+	  </header>
+	  
+		<section id="home" class="row">
+			<h2 class="hide">Home</h2>
+			<div class="video_container small-12 medium-12 large-12 columns round"> 
+				<video class="row columns" id="myTrailer1" preload poster="images/trailer1.jpg"> 
+					<source src="video/trailer_2.mp4" type="video/mp4"/>
+					<source src="video/trailer_2.webm" type="video/webm"/>
+					<source src="video/trailer_2.ogv" type="video/ogg"/> 
+				</video> 
+
+				<div class="videoControls row"> 
+					  <button class="controls" id="restart"></button> 
+					  <button class="controls" id="bwd"></button>
+					  <button class="controls" id="play"></button>
+					  <button class="controls" id="fwd"></button> 
+					  <button class="controls fullSb" id="fsBtn">Full Screen</button> 
+				</div> 
+			</div>
+		</section>
+  	
+  		<section id="promo" class="row">
+			<h2 class="hide">Promo</h2>
+			<section id="promoImg" class="small-12 medium-6 medium-push-6 large-6 large-push-6 columns">
+				<h3 class="hide">Promotion Image</h3>
+ 				<img src="images/blueray_case.jpg" alt="BluRay" class="round">
+ 			</section>
+ 			
+  			<section id="promoText" class="small-12 medium-6 medium-pull-6 large-6 large-pull-6 columns">
+  				<img src="images/border.svg" alt="border" >
+				<h3 id="cueImg">15th ANNIVERSARY</h3>
+				<p class="small-10 small-centered end columns">This year marks the 15th anniversary of <span class="ita">The Fellowship of the Ring</span> - the first instalment of <span class="ita">The Lord of the Rings</span> series movies. To celebrate the occasion, two special Blu Ray editions are released.</p>
+				
+				<a data-open="orderBox">ORDER NOW</a>
+					<div id="orderBox" class="reveal" data-reveal>
+						<form id="orderForm" action="form.php" method="post">
+							
+							<div class="small-12 medium-6 large-6 columns">
+							<label for="orderName">Name: <span class="required">(required)</span></label>
+							<input type="text" required id="orderName" name="fullName" size="30">
+
+							<label for="orderAddress">address: <span class="required">(required)</span></label>
+							<input type="text" id="orderAddress" size="30">
+							</div>
+
+							<button class="close-button" data-close aria-label="Close modal" type="button">Submit</button>
+						</form>	
+					</div>
+				<img src="images/border.svg" alt="border">
+			</section>
+	  	</section>
+	  	
+	  <section id="story" class="row">
+		  <h2 class="hide">Story</h2>
+			<section class="video_container small-12 medium-8 medium-offset-2 large-8 large-offset-0 columns round" id="trailer"> 
+				<h3 class="hide">Story Video</h3>
+				<video  id="myTrailer2" preload poster="images/trailer2.jpg"> 
+					<source src="video/trailer_1.mp4" type="video/mp4"/>
+					<source src="video/trailer_1.webm" type="video/webm"/>
+					<source src="video/trailer_1.ogv" type="video/ogg"/> 
+				</video> 
+
+				<div class="videoControls"> 
+					  <button class="controls" id="restart2"></button> 
+					  <button class="controls" id="bwd2"></button>
+					  <button class="controls" id="play2"></button>
+					  <button class="controls" id="fwd2"></button> 
+					  <button class="controls fullSb" id="fsBtn2">Full Screen</button> 
+						  
+				</div> 
+			</section>
+			
+		  <section id="storyText" class="small-12 medium-12 large-4 columns">
+			  <h3 class="hide">Story Text</h3>
+			  <img src="images/border.svg" alt="border">
+			  <p class="small-12 columns">The future of civilization rests in the fate of the One Ring, which has been lost for centuries. Powerful forces are unrelenting in their search for it. But fate has placed it in the hands of a young Hobbit named Frodo Baggins (Elijah Wood), who inherits the Ring and steps into legend. A daunting task lies ahead for Frodo when he becomes the Ringbearer - to destroy the One Ring in the fires of Mount Doom where it was forged.</p>
+			  <img src="images/border.svg" alt="border">
+		  </section>
+	  </section>
+	  
+	  <section id="gallery" class="row">
+		  <h2 class="hide">Gallery</h2>
+	
+		  	<div id="coolPics" class="small-12 medium-8 medium-centered large-8 large-centered columns">
+				
+				<div class="galleryImg">
+					<img src="images/image1.jpg" alt="Gandalf the Grey">
+					<div class="textRight">
+						<h3>Gandalf the Grey</h3>
+						<p>A wizard, member of the Istari order, as well as leader of the Fellowship of the Ring and the army of the West.</p>
+					</div>
+					</div>
+				
+				
+				<div class="galleryImg">
+					<img src="images/image2.jpg" alt="Frodo Baggins">
+					<div class="textRight">
+						<h3>Frodo Baggins</h3>
+						<p>A hobbit of the Shire who inherits the One Ring from Bilbo Baggins and undertakes the quest to destroy it in the fires of Mount Doom.</p>
+					</div>
+				</div>
+				
+				
+				
+				<div class="galleryImg">
+					<img src="images/image3.jpg" alt="Saruman the White">
+					<div class="textLeft">
+						<h3>Saruman the White</h3>
+						<p>The Dark Lord of Mordor and the Ring's true master who manifests as an Eye after the destruction of his physical form.</p>
+					</div>
+				
+				</div>
+				
+				
+				<div class="galleryImg">
+					<img src="images/image4.jpg" alt="Samwise 'Sam' Gamgee">
+					<div class="textRight">
+						<h3>Samwise "Sam" Gamgee</h3>
+						<p>A hobbit gardener and Frodo's best friend, he was made Frodo's first companion on his journey.</p>
+					</div>
+				
+				</div>
+				
+				
+				<div class="galleryImg">
+					<img src="images/image5.jpg" alt="Aragorn II Elessar">
+					<div class="textLeft">
+						<h3>"Strider" Aragorn II Elessar</h3>
+						<p>A Dúnedain ranger, the descendant of Isildur, and heir to Gondor's throne.</p>
+					</div>
+				</div>
+				
+				
+				
+				<div class="galleryImg">
+					<img src="images/image6.jpg" alt="Gollum">
+					<div class="textRight">
+						<h3>Gollum</h3>
+						<p>A wretched hobbit-like creature whose mind was poisoned over centuries by the Ring. The Ring extended his life far beyond natural limits.</p>
+					</div>
+				</div>
+				
+				
+				
+				<div class="galleryImg">
+					<img src="images/image7.jpg" alt="Legolas Greenleaf">
+					<div class="textRight">
+						<h3>Legolas Greenleaf</h3>
+						<p>A prince of the elves' Woodland Realm and a skilled archer.  A member of the Fellowship of the Ringa member of the Fellowship of the Ring</p>
+					</div>
+				</div>
+				
+				
+				<div class="galleryImg">
+					<img src="images/image8.jpg" alt="Gimli">
+					<div class="textLeft">
+						<h3>Gimli</h3>
+						<p>A dwarf warrior who accompanies the Fellowship to Mordor after they set out from Rivendell and a descendant of Durin's Folk.</p>
+					</div>
+				</div>
+				
+
+				<div class="galleryImg">
+					<img src="images/image9.jpg" alt="Boromir">
+					<div class="textLeft">
+						<h3>Boromir</h3>
+						<p>A prince of the Stewards of Gondor who pledged as part of the Fellowship of the Ring to keep the Ring-bearer safe.</p>
+					</div>
+				</div>
+				
+				
+				
+				<div class="galleryImg">
+					<img src="images/image10.jpg" alt="Meriadoc 'Merry' Brandybuck">
+					<div class="textLeft">
+						<h3>Meriadoc "Merry" Brandybuck</h3>
+						<p>A member of the Fellowship of the Ring, charged with destroying the One Ring.</p>
+					</div>
+				</div>
+				
+
+				<div class="galleryImg">
+					<img src="images/image11.jpg" alt="Peregrin 'Pippin' Took">
+					<div class="textLeft">
+						<h3>Peregrin "Pippin" Took</h3>
+						<p>A hobbit who travels with the Fellowship on their journey to Mordor.</p>
+					</div>
+				</div>
+				
+				<div class="galleryImg">
+					<img src="images/image12.jpg" alt="Bilbo Baggins">
+					<div class="textRight">
+						<h3>Bilbo Baggins</h3>
+						<p>The Lord of the Rings, begins with Bilbo's "eleventy-first" birthday. Frodo's uncle who gives him the Ring after he decides to retire to Rivendell. </p>
+					</div>
+				</div>
+			</div>
+		 
+		 
+    
+    	<!--<nav id="dotNav" class="small-12 small-centered medium-8 medium-centered large-8 large-centered columns">
+			<h3 class="hide">navigation</h3>
+			<ul id="navList">
+				<li><div class="dottie" data-offset="0"></div></li>
+				<li><div class="dottie" data-offset="1"></div></li>
+				<li><div class="dottie" data-offset="2"></div></li>
+				<li><div class="dottie" data-offset="3"></div></li>
+				<li><div class="dottie" data-offset="4"></div></li>
+				<li><div class="dottie" data-offset="5"></div></li><br class="show-for-small-only">
+				<li><div class="dottie" data-offset="6"></div></li>
+				<li><div class="dottie" data-offset="7"></div></li>
+				<li><div class="dottie" data-offset="8"></div></li>
+				<li><div class="dottie" data-offset="9"></div></li>
+				<li><div class="dottie" data-offset="10"></div></li>
+				<li><div class="dottie" data-offset="11"></div></li>
+			</ul>
+    	</nav>-->
+	  </section>
+	  
+	  <section id="register" class="row">
+	  	  <img src="images/border.svg" alt="border" class="small-10 small-offset-1 medium-10 medium-offset-1 large-10 large-offset-1 columns">
+		  <h2>REGISTER</h2>
+               	<form id="contactForm" action="form.php" method="post">
+                    <div class="small-12 medium-6 large-6 columns">
+                    <label for="name">Name: <span class="required">(required)</span></label>
+                    <input type="text" required id="name" name="fullName" size="30">
+                    
+                    <label for="email">Email: <span class="required">(required)</span></label>
+                    <input type="email" required id="email" size="30">
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" size="30">
+					</div>
+                    
+                    <div class="small-12 medium-6 large-6 columns">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+					</div>
+                   
+                    <input id="submit" type="submit" value="Submit">
+				</form>	
+		  <img src="images/border.svg" alt="border" class="small-10 small-offset-1 medium-10 medium-offset-1 large-10 large-offset-1 columns">	  
+	  </section>
+	  
+	  <footer id="mainFooter" class="row">
+		  <h2 class="hide">Footer</h2>
+			<div id="footer_social" class="small-12 small-centered medium-6 medium-centered large-4 large-centered columns">
+				<ul class="small-12 columns">
+					<li><a href="facebook.com"><img src="images/footer_icon_facebook.svg" height="50" width="50" alt="facebook"></a></li>
+					<li><a href="instagram.com"><img src="images/footer_icon_instagram.svg" height="50" width="50" alt="instagram"></a></li>
+					<li><a href="twitter.com"><img src="images/footer_icon_twitter.svg" height="50" width="50" alt="twitter"></a></li>
+					<li><a href="youtube.com"><img src="images/footer_icon_youtube.svg" height="50" width="50" alt="youtube"></a></li>
+				</ul>
+			</div>
+			
+			<ul id="footerNav" class="small-12 small-centered medium-4 medium-centered columns">
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#promo">PROMOTION</a></li>
+				<li><a href="#story">STORY</a></li>
+				<li><a href="#gallery">GALLERY</a></li>
+				<li><a href="#register">REGISTER</a></li>
+			</ul>
+			
+		  <div id="copyRight" class="small-12 small-centered medium-4 medium-centered  columns">
+			  <p>Copyright © THE FELLOWSHIP OF THE RING</p>
+		  </div>
+	  
+	  </footer>
+	  </div>
+   
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/minified/TimelineMax.min.js"></script>
+	<script src="js/minified/TweenMax.min.js"></script>
+	<script src="js/videoPlayer.js"></script>
+	  <script src="js/gallery.js"></script>
+	  <script src="js/cue_img.js"></script>
+  </body>
+</html>
