@@ -1026,3 +1026,92 @@ button
 }
 }
 
+/*Audio support*/
+
+#initPlay{
+	height:54px;
+	display:inline-block;
+	padding-right:20px;
+	border-radius: 27px;
+}
+
+#initPlay p{
+	display:inline-block;
+	color:#f0f0f0;
+	text-align: center;
+	line-height:54px;
+	margin-left:15px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 0.5em;
+	font-weight:bold;
+}
+
+#playBtn{
+	height:54px;
+	width:54px;
+	display:inline-block;
+	background-color: rgb(243, 243, 243);
+	border-radius: 27px;
+	line-height:54px;
+	text-align: center;
+}
+
+#playBtn a{
+	display:inline-block;
+	height:30px;
+	width:30px;
+	font-size:0.825em;
+	line-height:30px;
+	background-color: rgb(243, 243, 243);
+	color:#000;
+	border-radius: 15px;
+	-webkit-transition: all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	-moz-transition:    all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	-ms-transition:     all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  	-o-transition:      all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95); 
+  	transition:         all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#playBtn a:hover{
+	background-color:rgb(228, 228, 228);
+	-webkit-transition: all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	-moz-transition:    all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	-ms-transition:     all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  	-o-transition:      all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95); 
+  	transition:         all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	
+}
+
+/*Fix the div to the right bottom corner*/
+#fixed{
+	position:fixed;
+	bottom:20px;
+	right:50px;
+}
+
+/*set responsive width for the element*/
+
+audio{
+	display: none;
+	width: 300px;
+}
+@media screen and (max-width: 320px){
+	#fixed{
+		position:fixed;
+		bottom:20px;
+		right:20px;
+	}
+
+	audio{
+		width:250px;
+	}
+
+	#initPlay{
+		background-color: rgba(255, 255, 255, 0.514);
+	}
+
+	#initPlay p{
+		color:#000;
+	}
+}
